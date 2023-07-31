@@ -1,21 +1,7 @@
-
-/*
- * ===================================================================
- * 01. webfonts and iconfonts - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 
-
-/*
- * ===================================================================
- * 02. base style overrides - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
 html {
 	font-size: 10px;
 }
@@ -47,10 +33,7 @@ body {
 	color: #6e6e6e;
 }
 
-/**
- * links - (_document-setup.scss)
- * -------------------------------------------------------------------
- */
+
 a, a:visited {
 	color:green;
 	-moz-transition: all 0.3s ease-in-out;
@@ -64,12 +47,7 @@ a:hover, a:focus, a:active {
 	outline: 0;
 }
 
-/** 
- * ===================================================================
- * 03. typography & general theme styles - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
 	font-family: "poppins-semibold", sans-serif;
 	color: #313131;
@@ -237,10 +215,7 @@ hr {
 	height: 0;
 }
 
-/**
- * Lists - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
+
 ol {
 	list-style: decimal;
 }
@@ -285,43 +260,8 @@ dd {
 	margin: 0 0 0 2rem;
 }
 
-/**
- * tables - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
-table {
-	border-width: 0;
-	width: 100%;
-	max-width: 100%;
-	font-family: "lora-regular", sans-serif;
-}
-th, td {
-	padding: 1.5rem 3rem;
-	text-align: left;
-	border-bottom: 1px solid #E8E8E8;
-}
-th {
-	color: #313131;
-	font-family: "poppins-bold", sans-serif;
-}
-td {
-	line-height: 1.5;
-}
-th:first-child, td:first-child {
-	padding-left: 0;
-}
-th:last-child, td:last-child {
-	padding-right: 0;
-}
-.table-responsive {
-	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
-}
 
-/**
- * Spacing - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
+
 button, .button {
 	margin-bottom: 1.2;
 }
@@ -345,10 +285,7 @@ form,
 	margin-bottom: 3rem;
 }
 
-/**
- * floated image - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
+
 img.pull-right {
 	margin: .9rem 0 0 2.4rem;
 }
@@ -356,10 +293,7 @@ img.pull-left {
 	margin: .9rem 2.4rem 0 0;
 }
 
-/**
- * block grid paddings - (_document-setup.scss) 
- * -------------------------------------------------------------------
- */
+
 .bgrid {
 	padding: 0 20px;
 }
@@ -384,10 +318,7 @@ img.pull-left {
 	}
 }
 
-/**
- * pace.js styles - minimal  - (_document-setup.scss)
- * -------------------------------------------------------------------
- */
+
 .pace {
 	-webkit-pointer-events: none;
 	pointer-events: none;
@@ -408,12 +339,7 @@ img.pull-left {
 	height: 6px;
 }
 
-/** 
- * ===================================================================
- * 04. preloader - (_preloader-1.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 #preloader {
 	position: fixed;
 	top: 0;
@@ -471,12 +397,7 @@ img.pull-left {
 	}
 }
 
-/** 
- * ===================================================================
- * 05. forms - (_forms.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 fieldset {
 	border: none;
 }
@@ -548,7 +469,7 @@ select {
 	color: #252525;
 }
 
-/* IE9 and below */
+
 .oldie .ss-custom-select::after {
 	display: none;
 }
@@ -589,10 +510,7 @@ label > input[type="checkbox"], label > input[type="radio"] {
 	top: .15rem;
 }
 
-/**
- * Style Placeholder Text  
- * -
- */
+
 ::-webkit-input-placeholder {
 	color: #a1a1a1;
 }
@@ -609,12 +527,7 @@ label > input[type="checkbox"], label > input[type="radio"] {
 	color: #a1a1a1 !important;
 }
 
-/** 
- * ===================================================================
- * 06. buttons - (_button-essentials.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 .button,
 a.button,
 button,
@@ -715,17 +628,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/** 
- * ===================================================================
- * 07. other components - (_others.scss)
- *
- * ------------------------------------------------------------------- 
- */
 
-/**
- * alert box - (_alert-box.scss)
- * -------------------------------------------------------------------
- */
 .alert-box {
 	padding: 2.1rem 4rem 2.1rem 3rem;
 	position: relative;
@@ -757,14 +660,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #bba31b;
 }
 
-/**
- * additional typo styles - (_additional-typo.scss)
- * -------------------------------------------------------------------
- */
 
-/**
- * drop cap 
- */
 .drop-cap:first-letter {
 	float: left;
 	margin: 0;
@@ -777,9 +673,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #313131;
 }
 
-/**
- * line definition style
- */
+
 .lining dt, .lining dd {
 	display: inline;
 	margin: 0;
@@ -799,9 +693,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-left: -0.2em;
 }
 
-/**
- * dictionary definition style
- */
 .dictionary-style dt {
 	display: inline;
 	counter-reset: definitions;
@@ -818,97 +709,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: counter(definitions, decimal) ". ";
 }
 
-/** 
- * Pull Quotes
- * -----------
- * markup:
- *
- * <aside class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- *	</aside>
- *
- * --------------------------------------------------------------------- 
- */
-.pull-quote {
-	position: relative;
-	padding: 2.1rem 3rem 2.1rem 0px;
-}
-.pull-quote:before, .pull-quote:after {
-	height: 1em;
-	position: absolute;
-	font-size: 8rem;
-	font-family: Arial, Sans-Serif;
-	color: #333;
-}
-.pull-quote:before {
-	content: "\201C";
-	top: 33px;
-	left: 0;
-}
-.pull-quote:after {
-	content: '\201D';
-	bottom: -33px;
-	right: 0;
-}
-.pull-quote blockquote {
-	margin: 0;
-}
-.pull-quote blockquote:before {
-	content: none;
-}
 
-/** 
- * Stats Tab
- * ---------
- * markup:
- *
- * <ul class="stats-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
- *
- * Extend this object into your markup.
- *
- * ---------------------------------------------------------------------
- */
-.stats-tabs {
-	padding: 0;
-	margin: 3rem 0;
-}
-.stats-tabs li {
-	display: inline-block;
-	margin: 0 1.5rem 3rem 0;
-	padding: 0 1.5rem 0 0;
-	border-right: 1px solid #ccc;
-}
-.stats-tabs li:last-child {
-	margin: 0;
-	padding: 0;
-	border: none;
-}
-.stats-tabs li a {
-	display: inline-block;
-	font-size: 2.5rem;
-	font-family: "poppins-bold", sans-serif;
-	border: none;
-	color: #252525;
-}
-.stats-tabs li a:hover {
-	color: #44ff00;
-}
-.stats-tabs li a em {
-	display: block;
-	margin: .6rem 0 0 0;
-	font-size: 1.4rem;
-	font-family: "poppins-regular", sans-serif;
-	color: #888888;
-}
-
-/**
- * skillbars - (_skillbars.scss)
- * -------------------------------------------------------------------
- */
 .skill-bars {
 	list-style: none;
 	margin: 6rem 0 3rem;
@@ -983,12 +784,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .skill-bars li .percent100 { width: 100%; }
 
 
-/** 
- * ===================================================================
- * 08. common styles (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+/
 .grey-section {
 	background: #ebebeb;
 }
@@ -1018,11 +814,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	letter-spacing: .4rem;
 }
 
-/**
- * responsive:
- * common styles
- * ------------------------------------------------------------------- 
- */
+
 @media only screen and (max-width:768px) {
 	.section-intro {
 		max-width: 650px;
@@ -1047,12 +839,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/** 
- * ===================================================================
- * 09. header styles - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 header {
 	position:absolute;
 	width: 100%;
@@ -1072,33 +859,7 @@ header .top-bar {
 	left: 90px;
 	top: 0;
 } 
-/*
-header .logo {
-	float: left;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 25px;
-	position: relative;
-}
-header .logo a {
-	display: block;
-	margin: 0;
-	padding: 0;
-	border: none;
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-	width: 92px;
-	height: 25px;
-	background: url("../images/logo.jpg") no-repeat center;
-	background-size: 92px 45px;
-}
-*/
 
-/**
- * menu toggle - (_layout.css)
- * ------------------------------------------------------------------- 
- */
 .menu-toggle {
 	float: left;
 	width: 40px;
@@ -1232,11 +993,7 @@ header .logo a {
 	color: #fb00ff;
 }
 
-/**
- * responsive:
- * header styles
- * --------------------------------------------------------------- 
- */
+
 @media only screen and (max-width:1024px) {
 	header .top-bar {
 		left: 60px;
@@ -1259,12 +1016,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 10. intro - (_layout.scss) 
- *
- * ------------------------------------------------------------------- 
- */
+
 #intro {
 	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
@@ -1391,11 +1143,7 @@ header .logo a {
 	color: #44ff00;
 }
 
-/**
- * responsive:
- * Intro
- * --------------------------------------------------------------- 
- */
+
 @media only screen and (max-width:1024px) {
 	.intro-content h1 {
 		font-size: 7.6rem;
@@ -1455,12 +1203,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 11. about - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 #about {
 	background:  white;
 	padding-top: 12rem;
@@ -1541,11 +1284,7 @@ header .logo a {
 	margin-right: 4rem;
 }
 
-/**
- * responsive:
- * about
- * ------------------------------------------------------------------- 
- */
+
 @media only screen and (max-width:1024px) {
 	.intro-info {
 		margin-right: 0;
@@ -1591,12 +1330,7 @@ header .logo a {
 	}
 }
 
-/** 
- * ===================================================================
- * 12. resume - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 #resume {
 	padding-top: 12rem;
 	padding-bottom: 12rem;
@@ -1683,11 +1417,7 @@ header .logo a {
 	bottom: 0;
 }
 
-/**
- * responsive:
- * resume
- * ------------------------------------------------------------------- 
- */
+
 @media only screen and (max-width:1024px) {
 	#resume .timeline-header {
 		padding-right: 50px;
@@ -1760,12 +1490,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 14. call-to-action section - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 #cta {
 	padding-top: 10.2rem;
 	padding-bottom: 9rem;
@@ -1787,10 +1512,6 @@ header .logo a {
 	border-radius: 50%;
 }
 
-/**
- * section ads - (_layout.scss)
- * ------------------------------------------------------------------- 
- */
 .section-ads h2 {
 	position: relative;
 	padding-bottom: 2.1rem;
@@ -1813,11 +1534,7 @@ header .logo a {
 	color: #3F0D39;
 }
 
-/**
- * responsive:
- * cta
- * -------------------------------------------------------------------
- */
+
 @media only screen and (max-width:650px) {
 	.cta-content {
 		max-width: 650px;
@@ -1828,12 +1545,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 15. services - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 #services {
 	background: #313131 url(../images/bg.jpg) no-repeat center;
 	-webkit-background-size: cover;
@@ -1916,12 +1628,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 16. stats - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 #stats {
 	background: #44ff00;
 	padding-top: 7.2rem;
@@ -1954,11 +1661,7 @@ header .logo a {
 	color: rgba(255, 255, 255, 0.5);
 }
 
-/**
- * responsive:
- * stats
- * -------------------------------------------------------------------
- */ 
+
 @media only screen and (max-width:1024px) {
 	#stats .stat:nth-child(n) {
 		border-left: 1px solid rgba(255, 255, 255, 0.12);
@@ -1983,12 +1686,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 17. contact - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 #contact {
 	background: #151515;
 	padding-top: 12rem;
@@ -2168,10 +1866,7 @@ header .logo a {
 	color: #44ff00;
 }
 
-/**
- * loader animation - (_layout.scss)
- * --------------------------------------------------------------- 
- */
+
 .s-loader {
 	margin: 1.2rem auto 3rem;
 	width: 70px;
@@ -2224,12 +1919,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 18. footer - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 footer {
 	padding-bottom: 3rem;
 	font-size: 1.2rem;
@@ -2276,11 +1966,7 @@ footer .copyright span:last-child::after {
 	display: none;
 }
 
-/**
- * responsive:
- * footer
- * -------------------------------------------------------------------
- */
+
 @media only screen and (max-width:768px) {
 	footer {
 		text-align: center;
@@ -2299,10 +1985,7 @@ footer .copyright span:last-child::after {
 	}
 }
 
-/**
- * go to top - (_layout.scss)
- * ------------------------------------------------------------------- 
- */
+
 #go-top {
 	position: fixed;
 	bottom: 0;
