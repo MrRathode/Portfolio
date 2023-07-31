@@ -784,7 +784,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .skill-bars li .percent100 { width: 100%; }
 
 
-/
+
 .grey-section {
 	background: #ebebeb;
 }
@@ -1411,7 +1411,7 @@ header .top-bar {
 	display: block;
 	height: 3px;
 	width: 50px;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.1);
 	position: absolute;
 	left: 0;
 	bottom: 0;
