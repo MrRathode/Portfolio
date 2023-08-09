@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         if ($mailSent) {
             echo "OK"; // Sent successfully
-        } else {
+        } else if {
             echo "Something went wrong. Please try again."; // Failed to send
         }
     } else {
