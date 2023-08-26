@@ -1,6 +1,6 @@
 <?php
 
-$siteOwnersEmail = 'mrrathode111@gmail.com';
+$siteOwnersEmail = 'naveenrathod241@gmail.com';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = trim($_POST['contactName']);
