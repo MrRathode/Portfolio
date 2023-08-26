@@ -186,25 +186,46 @@
 			var sLoader = $('#submit-loader');
 
 		
-$.ajax({
-    type: "POST",
-    url: "inc/sendEmail.php", 
-    data: $(form).serialize(),
-    beforeSend: function() {
-        sLoader.fadeIn();
-    },
-    success: function(msg) {
-        if (msg == 'OK') {
-            // Success logic
-        } else {
-            // Error logic
-        }
-    },
-    error: function(xhr, status, error) {
-        console.log(xhr.responseText); // Log the detailed error response
-        console.log(error); // Log the error status
-    }
-});
+$.ajax({      	
+
+		      type: "POST",
+		      url: "inc/sendEmail.php",
+		      data: $(form).serialize(),
+		      beforeSend: function() { 
+
+		      	sLoader.fadeIn(); 
+
+		      },
+		      success: function(msg) {
+
+	            // Message was sent
+	            if (msg == 'OK') {
+	            	sLoader.fadeOut(); 
+	               $('#message-warning').hide();
+	               $('#contactForm').fadeOut();
+	               $('#message-success').fadeIn();   
+	            }
+	            // There was an error
+	            else {
+	            	sLoader.fadeOut(); 
+	               $('#message-warning').html(msg);
+		            $('#message-warning').fadeIn();
+	            }
+
+		      },
+		      error: function() {
+
+		      	sLoader.fadeOut(); 
+		      	$('#message-warning').html("Something went wrong. Please try again.");
+		         $('#message-warning').fadeIn();
+
+		      }
+
+	      });     		
+  		}
+
+	});
+
 
  
 	var pxShow = 300; // height on which the button will show
