@@ -1,5 +1,4 @@
-﻿<?php
-
+<?php
 
 $siteOwnersEmail = 'mrrathode111@gmail.com';
 
@@ -9,7 +8,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $subject = trim($_POST['contactSubject']);
     $contact_message = trim($_POST['contactMessage']);
 
-  
     $errors = [];
     if (empty($name)) {
         $errors['name'] = "Please enter your name.";
@@ -23,7 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (strlen($contact_message) < 15) {
         $errors['message'] = "Please enter your message. It should have at least 15 characters.";
     }
-
 
     if (empty($errors)) {
         $message = "Email from: " . $name . "<br />";
@@ -45,10 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             echo "Something went wrong. Please try again."; // Failed to send
         }
     } else {
-       
-        foreach ($errors as $error) {
-            echo $error . "<br>";
-        }
+        $errorMessages = implode('<br>', $errors);
+        echo $errorMessages;
     }
 }
 
