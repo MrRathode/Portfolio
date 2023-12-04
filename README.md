@@ -45,7 +45,7 @@ This portfolio is open-source and is under the [MIT License](LICENSE). Feel free
 
 If you want to set up a portfolio like this for yourself, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/your-portfolio.git`
+1. Clone the repository: `git clone https://github.com/mrrathode/Portfolio.git`
 2. Customize the content:
    - Replace the content in each section of `README.md` with your own details.
    - Add your projects and update the skills section accordingly.
